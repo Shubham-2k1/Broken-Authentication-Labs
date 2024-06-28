@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broken Authentication Labs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <style>
+      .cards{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 100px;
+    }
+    </style>
+</head>
+<body>
+    <div class="cards">
+
+        <!-- Lab 1 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Lab 1</h5>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZbtFA8JcKpIUi2ZiNuKj1AtUa5ATa7QIZSg&s">
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Level: Easy</li>
+            </ul>
+            <div class="card-body">
+              <a href="\Lab 1\lab1.html" target="_blank" class="card-link">Go to lab</a>
+              <a href="#" id="hint1" class="card-link">Hint</a>
+              <a href="Lab 1\solution.html" id="solve1" class="card-link">Solution</a>
+            </div>
+          </div>
+
+          <!-- Lab 2 -->
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Lab 2</h5>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZbtFA8JcKpIUi2ZiNuKj1AtUa5ATa7QIZSg&s">
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Level: Medium</li>
+            </ul>
+            <div class="card-body">
+              <a href="\Lab 2\lab2.html" target="_blank" class="card-link">Go to lab</a>
+              <a href="#" id="hint2" class="card-link">Hint</a>
+              <a href="Lab 2\solution.html" target="_blank" id="solve2" class="card-link">Solution</a>
+            </div>
+          </div>
+
+          <!-- Lab 3 -->
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Lab 3</h5>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZbtFA8JcKpIUi2ZiNuKj1AtUa5ATa7QIZSg&s">
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Level: Hard</li>
+            </ul>
+            <div class="card-body">
+              <a href="\Lab 3\lab3.html" target="_blank" class="card-link">Go to lab</a>
+              <a href="#" id="hint3" class="card-link">Hint</a>
+              <a href="Lab 3\solution.html" target="_blank" id="solve3" class="card-link">Solution</a>
+            </div>
+          </div>
+
+    </div>
+      
+
+    <!-- JavaScript -->
+    <script>
+      document.getElementById('hint1').addEventListener('click', function() {
+        alert('Pay attention on error message');
+      });
+    document.getElementById('hint2').addEventListener('click', function() {
+        alert('What is "X-Forwarded-For header"? Search');
+      });
+    document.getElementById('hint3').addEventListener('click', function() {
+        alert("Don't you find something extra in error message USER?");
+      });
+    </script>
+</body>
+</html>
