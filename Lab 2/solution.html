@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solution for Lab 2</title>
+    <style>
+        .head{
+            font-size: 50px;
+        }
+        .solution{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
-    <p>Solution Coming Soon!</p>
+    <center class="head">Solution</center>
+    <div class="solution">
+            <p>	1.	Intercept the request using burp-suite <br>
+                2.	Send the request to Intruder <br>
+                3.	Add “X-Forwarded-For: {any random ip}” in the  header<br>
+                4.	Select “Pitchfork” as attack type<br>
+                5.	Place the payload marker on the last octet of IP and username<br>
+                6.	For IP last octet payload select Number -> 1 to 100 and for username paste all the username from the lab <br>
+                7.	Start the attack and look for the different response <br>
+                8.	And repeat the process with password payloads present on the main page<br>
+                9.	Look for [ ‘authenticated’: True ] <br>
+                10.	 Note the correct password and do the login on the lab page
+                
+            </p>
+    </div>
+    
 </body>
 </html>

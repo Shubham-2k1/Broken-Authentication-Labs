@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solution for Lab 3</title>
+    <style>
+        .head{
+            font-size: 50px;
+        }
+        .solution{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
-    <p>Solution Coming Soon!</p>
+    <center class="head">Solution</center>
+    <div class="solution">
+            <p>	1.	Intercept the request using burp-suite<br>
+                2.	Send the request to Intruder <br>
+                3.	Select “Cluster Bomb” as attack type<br>
+                4.	Place a payload marker on username and other payload marker on password <br>
+                5.	Add all the username from the payload table and for every attack select only 4 passwords out of complete list<br>
+                6.	Cluster Bomb will try 1 username with all the 4 passwords,<br>
+                7.  And after 4 incorrect attempt that username will be set for cooldown of 1 minute<br>
+                8.	And repeat the process with other 4 password payloads present on the main page and so on<br>
+                9.	Look for [ ‘authenticated’: True ] <br>
+                10.	 Note the correct password and do the login on the lab page<br>                
+            </p>
+    </div>
+    
 </body>
 </html>
